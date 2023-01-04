@@ -13,8 +13,8 @@
 O **Selenium WebDriver** usa o próprio driver do navegador para a automação. É a forma mais moderna de interação atualmente, pois cada browser possui
 o seu respectivo drive, permitindo a interação entre o script de teste e o respectivo browser.
 
- <center>![image](https://user-images.githubusercontent.com/106537496/210465145-e76f1684-769b-4b9f-b855-531d91d2680b.png)</center>
-
+ 
+![image](https://user-images.githubusercontent.com/106537496/210465145-e76f1684-769b-4b9f-b855-531d91d2680b.png)
   
   ## Classe WebDriver
   

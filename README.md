@@ -53,6 +53,21 @@ o seu respectivo drive, permitindo a interação entre o script de teste e o res
   
   **linkText**("link")
   
+  ### Classe WebElement
+  Representa um elemento e oferece métodos para interagir com ele.
+  
+  **getText()** - Retorna o texto contido no elemento
+  
+  **click()** - Clica sobre o elemento
+  
+  **getAttribute(nome)** - Retorna o valor do atributo
+  
+  **getCssValue(nome)** - Retorna o valor da propriedade
+  
+  **getTagName()** - Retorna o nome da tag
+  
+  **getTexto()** - Retorna o texto contido no elemento
+  
   
         
 

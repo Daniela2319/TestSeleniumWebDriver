@@ -1,14 +1,16 @@
-package br.com.pages;
+package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public abstract class BasePage {
     //atributos driver
     private WebDriver driver;
+    private Actions actions;
 
     //Construtor
     public BasePage(){
@@ -52,5 +54,23 @@ public abstract class BasePage {
 
     public String getText(By locator){ // encontra o texto
         return this.driver.findElement(locator).getText();
+    }
+
+    public void actionMoveToElementPerform(By locator){ //mova o mouse para baixo
+        if (this.actions == null){
+            this.actions = new Actions(this.driver);
+        }
+        //mover o mouse no elemento
+        WebElement element = this.driver.findElement(locator);
+        actions.moveToElement(element).perform();
+    }
+
+    public void actionMoveToElementClickPerform(By locator){
+        if (this.actions == null){
+            this.actions = new Actions(this.driver);
+        }
+        //clicar no elemento
+        WebElement element = this.driver.findElement(locator);
+        actions.moveToElement(element).click().build().perform();
     }
 }

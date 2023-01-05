@@ -1,4 +1,4 @@
-package br.com.selenium;
+package br.com.pages;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;

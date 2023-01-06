@@ -1,4 +1,4 @@
-package Pages;
+package br.com.pages.Pages;
 
 import org.openqa.selenium.By;
 
@@ -24,6 +24,6 @@ public class LoginPage extends BasePage {
     }
 
     public String getAutomationExecirse(){
-        return super.getText(tagAutomationExercirse);
+        return super.getTexte(tagAutomationExercirse);
     }
 }

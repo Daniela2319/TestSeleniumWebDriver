@@ -1,6 +1,6 @@
 package br.com.pages;
 
-import Pages.DressesPage;
+import br.com.pages.Pages.DressesPage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,7 +17,7 @@ public class DressePageTest {
     }
 
     @AfterEach
-    void tearDown(){
+    void tearDown(){ //fecha pagina
     this.dressesPage.quitWebDriver();
     }
 
@@ -26,7 +26,7 @@ public class DressePageTest {
         //when
         this.dressesPage.viewCasualDressesPage();
         //then
-        Assertions.assertEquals("WOMEN - DRESS PRODUCTS", this.dressesPage.getTitlePage());
-        Assertions.assertFalse(this.URL.equals(dressesPage.getCurrentUrl()));
+        Assertions.assertEquals("Products",dressesPage.geteTitlePage());
+        Assertions.assertFalse(URL.equals(dressesPage.getCurrentUrl()));
     }
 }

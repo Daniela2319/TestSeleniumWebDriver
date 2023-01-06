@@ -1,4 +1,4 @@
-package Pages;
+package br.com.pages.Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -32,7 +32,7 @@ public abstract class BasePage {
         this.driver.quit();
     }
 
-    public WebElement findElement(By locator){ // encontrar o elmento
+    public WebElement findElemente(By locator){ // encontrar o elmento
         return this.driver.findElement(locator);
     }
 
@@ -52,7 +52,7 @@ public abstract class BasePage {
         this.driver.findElement(locator).click();
     }
 
-    public String getText(By locator){ // encontra o texto
+    public String getTexte(By locator){ // encontra o texto
         return this.driver.findElement(locator).getText();
     }
 
